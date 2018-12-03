@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-      // Override point for customization after application launch.
+      //carga el etag que se ha guardado en modelo, es opcional, si no existe no pasa nada
+      etag = UserDefaults.standard.string(forKey: "etag")
       return true
    }
 
